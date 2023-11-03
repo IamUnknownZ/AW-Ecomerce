@@ -149,6 +149,9 @@ h4{
 .col2 .exclu-p{
     color: #555 ;
 }
+.col2 .exclu-p span{
+    font-size: 30px;
+}
 .offer{
     background: radial-gradient(#e7b9ea,#60497e);
     margin-top: 80px;
