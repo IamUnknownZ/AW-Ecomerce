@@ -11,16 +11,18 @@
     <script src="https://kit.fontawesome.com/34a480d6fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="loader" id="loader"></div>
+
     <div class="header">
 
 
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo11.png" width="150px">
+                <img src="images/logo11.png" width="150px" class="lt">
             </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="Home">Home</a></li>
                         <li><a href="Products">Products</a></li>
                         <li><a href="About">About</a></li>
@@ -28,7 +30,12 @@
                         <li><a href="Account">Account</a></li>
                         </ul>
                 </nav>
-                <img src="images/cart.png" width="30px" height="30px">
+                <div class="cart-icon" onclick="showCart()">
+                    <img src="images/cart.png" width="30px" height="30px">
+                    <span id="cart-count">0</span>
+                </div>
+                    </div>
+                    
         </div>
         <div class="row">
             <div class="col2">
@@ -37,7 +44,7 @@
                 <a href="#" class="btn">Shop now &#8594;</a>
             </div>
             <div class="col2">
-                <img src="images/image1.png">
+                <img src="images/image1.png" class="punch">
             </div>
         </div>
     </div>
@@ -65,18 +72,16 @@
         <h2 class="title">Feature Products</h2>
         
         <div class="row">
-            <div class="col-4">
-                <img src="images/product1.png" >
+            <div class="col-4" onclick="buyItem('Red printed T-shirt', 50.00)">
+                <img src="images/product1.png">
                 <h4>Red printed T-shirt</h4>
                 <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <!-- Your rating stars here -->
                 </div>
                 <p>$50.00</p>
+                <button onclick="buyItem('Red printed T-shirt', 50.00)">Buy</button>
             </div>
+            
             <div class="col-4">
                 <img src="images/product2.png" >
                 <h4>Red printed T-shirt</h4>
@@ -235,7 +240,9 @@
             </div>
         </div>
     </div>
-
+    
+<!-- Loader -->
+<div class="loader" id="loader"></div>
 <!--textimonial-->    
     <div class="testimonial">
         <div class="small-container">
@@ -283,6 +290,8 @@
         </div>
     </div>
 
+
+    
     <!-- Brands-->
 
     <div class="brands">
@@ -301,7 +310,7 @@
                     <img src="images/logo-xbox.png">
                 </div>
                 <div class="col-5">
-                    <img src="images/logo-bmw.png">
+                    <img src="images/logo-bmw.png" > 
                 </div>
             </div>
         </div>
@@ -312,35 +321,32 @@
         <div class="container">
             <div class="row">   
                 <div class="footer-col-1">
-                    <h3>..</h3>
-                    <p>dcejfefefefefeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-
+                    <h3>My another Website</h3>
+                    <a class='My-Port-Web' href="https://iamunknownz.github.io/My-Port-Web/">My portfolio Website</a>
                 </div>
                 <div class="footer-col-2">
-                    <img src="images/logowhite.png">
-                    <p>dcejdddddddddddddddddddddddddddddddddddddddddd
-                        xxsscdddddddddddddddddwdwdd</p>
+                    <img src="images/logowhite.png" class="white-logo">
                 </div>
                 <div class="footer-col-3">
-                    <h3>useful links</h3>
+                    <h3>Follow me!</h3>
                     <ul>
-                        <li>fdff</li>
-                        <li>fff</li>
-                        <li>ff</li>
-                        <li>ff</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>X</li>
-                        <li>Instragram</li>
-                        <li>Youtube</li>
+                        <li class="my-ig"><a href="https://www.instagram.com/delsin_z/">Instragram</a></li>
                     </ul>
                 </div>
             </div>
+            <hr>
+            <p class="ending">- This website made for Educational. -</p>
         </div>
     </div>
+   
+    
+
+    
+    
+        
+
+<!--scripts-->
+
+
 </body>
 </html>
